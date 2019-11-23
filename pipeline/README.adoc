@@ -45,7 +45,7 @@ s2i-quarkus         13 seconds ago
 
 [source,bash]
 ----
-oc create -f pipeline/resources.yaml
+oc apply -f resources.yaml
 ----
 Check the resource created
 
@@ -76,7 +76,7 @@ pipelineresource.tekton.dev/quarkus-internal-image   63s
 
 [source,bash]
 ----
-oc create -f pipeline/deploy.yaml
+oc apply -f deploy.yaml
 ----
 Check the pipeline created
 
